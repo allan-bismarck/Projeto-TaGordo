@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#fechar_painel_lateral" prefHeight="586.0" prefWidth="1229.0" style="-fx-background-color: white; -fx-border-color: #E16740; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_gordo.GradeController">
+   <children>
+      <VBox layoutX="39.0" layoutY="27.0" prefHeight="540.0" prefWidth="200.0" style="-fx-background-color: E16740;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="234.0">
+               <children>
+                  <Text fill="WHITE" layoutX="-2.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TaGordo" textAlignment="CENTER" wrappingWidth="235.13671875">
+                     <font>
+                        <Font name="Candara" size="46.0" />
+                     </font>
+                  </Text>
+                  <ImageView layoutX="96.0" layoutY="20.0">
+                     <image>
+                        <Image url="@../Icones/school.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton onAction="#disciplinas" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #E16740;" text="Disciplinas" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#ir_evento" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #E16740;" text="Evento" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#ir_trabalho" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #E16740;" text="Trabalho" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#ir_horario_de_estudo" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #E16740;" text="Horário de Estudos" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane prefHeight="326.0" prefWidth="234.0">
+               <children>
+                  <JFXButton layoutX="34.0" layoutY="206.0" onAction="#ir_telainicial" prefHeight="39.0" prefWidth="185.0" style="-fx-background-color: white;" text="Logout" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <GridPane fx:id="grade" layoutX="242.0" layoutY="71.0" prefHeight="445.0" prefWidth="734.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="21.0" layoutY="17.0" text="Domingo" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="23.0" layoutY="17.0" text="Segunda" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.columnIndex="3">
+               <children>
+                  <Label layoutX="32.0" layoutY="17.0" text="Terça" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.columnIndex="4">
+               <children>
+                  <Label layoutX="28.0" layoutY="17.0" text="Quarta" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.columnIndex="5">
+               <children>
+                  <Label layoutX="27.0" layoutY="18.0" text="Quinta" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.columnIndex="6">
+               <children>
+                  <Label layoutX="32.0" layoutY="17.0" text="Sexta" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.columnIndex="7">
+               <children>
+                  <Label layoutX="26.0" layoutY="17.0" text="Sábado" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E16740;" GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="9.0" layoutY="18.0" text="08:00 - 10:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.rowIndex="2">
+               <children>
+                  <Label layoutX="9.0" layoutY="18.0" text="10:00 - 12:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.rowIndex="3">
+               <children>
+                  <Label layoutX="9.0" layoutY="18.0" text="12:00 - 14:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.rowIndex="4">
+               <children>
+                  <Label layoutX="11.0" layoutY="16.0" text="14:00 - 16:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.rowIndex="5">
+               <children>
+                  <Label layoutX="11.0" layoutY="16.0" text="16:00 - 18:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.rowIndex="6">
+               <children>
+                  <Label layoutX="11.0" layoutY="16.0" text="18:00 - 20:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.rowIndex="7">
+               <children>
+                  <Label layoutX="9.0" layoutY="18.0" text="20:00 - 22:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFF7F2;" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: E16740;" GridPane.rowIndex="8">
+               <children>
+                  <Label layoutX="9.0" layoutY="18.0" text="22:00 - 00:00" textFill="#fcfafa">
+                     <font>
+                        <Font name="Candara Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffdbbe;" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <AnchorPane fx:id="detalhes" layoutX="433.0" layoutY="526.0" prefHeight="586.0" prefWidth="235.0" style="-fx-background-color: #E16740;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="primeiro_label" alignment="CENTER" ellipsisString="" layoutX="8.0" layoutY="143.0" prefHeight="30.0" prefWidth="214.0" style="-fx-border-color: white;" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="primeiro_campo" alignment="CENTER" layoutX="8.0" layoutY="173.0" prefHeight="30.0" prefWidth="214.0" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="segundo_label" alignment="CENTER" layoutX="10.0" layoutY="231.0" prefHeight="30.0" prefWidth="214.0" style="-fx-border-color: white;" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="segundo_campo" alignment="CENTER" layoutX="10.0" layoutY="261.0" prefHeight="30.0" prefWidth="214.0" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="terceiro_label" alignment="CENTER" layoutX="10.0" layoutY="314.0" prefHeight="30.0" prefWidth="214.0" style="-fx-border-color: white;" textFill="WHITE">
+               <font>
+                  <Font name="Candara Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="terceiro_campo" alignment="CENTER" layoutX="10.0" layoutY="344.0" prefHeight="30.0" prefWidth="214.0" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="remove" layoutX="31.0" layoutY="519.0" prefHeight="39.0" prefWidth="185.0" style="-fx-background-color: white;" text="Remover" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="msg" alignment="CENTER" contentDisplay="CENTER" layoutX="423.0" layoutY="24.0" prefHeight="17.0" prefWidth="383.0" textFill="#e16740">
+         <font>
+            <Font name="Candara Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="b2" layoutX="1100.0" layoutY="17.0" mnemonicParsing="false" onAction="#Minimizar" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Icones/baseline_minimize_black_36dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="b1" layoutX="1152.0" layoutY="17.0" mnemonicParsing="false" onAction="#Close" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../Icones/baseline_close_black_36dp.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

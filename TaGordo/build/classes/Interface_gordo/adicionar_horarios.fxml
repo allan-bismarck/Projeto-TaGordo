@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="752.0" style="-fx-background-color: E16740; -fx-border-color: white; -fx-border-width: 2;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interface_gordo.Adicionar_horariosController">
+   <children>
+      <VBox prefHeight="82.0" prefWidth="744.0" style="-fx-background-color: E16740;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="82.0" prefWidth="760.0" style="-fx-background-color: white;">
+               <children>
+                  <Text fill="#e16740" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adicionar Horários" textAlignment="CENTER" wrappingWidth="427.13671875">
+                     <font>
+                        <Font name="Candara" size="46.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="558.0" layoutY="17.0" onAction="#closeButtonAction" prefHeight="39.0" prefWidth="177.0" style="-fx-background-color: #E16740;" text="Voltar" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="465.0" layoutY="104.0" prefHeight="246.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#e16740" layoutX="73.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horários">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="dez" layoutX="42.0" layoutY="61.0" mnemonicParsing="false" text="10:00 ás 12:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="doze" layoutX="42.0" layoutY="85.0" mnemonicParsing="false" text="12:00 ás 14:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="quatorze" layoutX="42.0" layoutY="111.0" mnemonicParsing="false" text="14:00 ás 16:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dezesseis" layoutX="42.0" layoutY="136.0" mnemonicParsing="false" text="16:00 ás 18:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dezoito" layoutX="42.0" layoutY="163.0" mnemonicParsing="false" text="18:00 ás 20:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="vinte" layoutX="42.0" layoutY="189.0" mnemonicParsing="false" text="20:00 ás 22:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="oito" layoutX="42.0" layoutY="37.0" mnemonicParsing="false" text="8:00 ás 10:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="vinteedois" layoutX="41.0" layoutY="212.0" mnemonicParsing="false" text="22:00 ás 00:00" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="88.0" layoutY="104.0" prefHeight="246.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Text fill="#e16740" layoutX="87.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dias">
+               <font>
+                  <Font name="Candara" size="15.0" />
+               </font>
+            </Text>
+            <RadioButton fx:id="seg" layoutX="57.0" layoutY="65.0" mnemonicParsing="false" text="Segunda" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="ter" layoutX="57.0" layoutY="89.0" mnemonicParsing="false" text="Terça" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="qua" layoutX="57.0" layoutY="115.0" mnemonicParsing="false" text="Quarta" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="qui" layoutX="57.0" layoutY="140.0" mnemonicParsing="false" text="Quinta" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sex" layoutX="57.0" layoutY="167.0" mnemonicParsing="false" text="Sexta" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="sab" layoutX="57.0" layoutY="193.0" mnemonicParsing="false" text="Sábado" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="dom" layoutX="57.0" layoutY="41.0" mnemonicParsing="false" text="Domingo" textFill="#e16740">
+               <font>
+                  <Font name="Candara" size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </AnchorPane>
+      <Label fx:id="error" alignment="CENTER" layoutX="302.0" layoutY="329.0" prefHeight="21.0" prefWidth="148.0" textFill="WHITE">
+         <font>
+            <Font name="Candara" size="12.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="botao" layoutX="284.0" layoutY="361.0" onAction="#seleciona_dia" prefHeight="39.0" prefWidth="185.0" style="-fx-background-color: white;" text="Confirmar" />
+   </children>
+</AnchorPane>
